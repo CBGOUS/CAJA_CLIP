@@ -1,5 +1,5 @@
 # findJunctions.v1.6.py
-Find pattern of target RNAs around splicing junctions from CLIP-seq data.
+CLIP tags Around Junction Analysis (CAJA). Find pattern of target RNAs around splicing junctions from CLIP-seq data.
 Find distance between the end/start of tags and splicing sites on both positive and negative strands between a given range (e.g. -200~+200, 0 respresenting splicing sites)
 
 Parser for command-line options, arguments and sub-commands. Basic usage:
