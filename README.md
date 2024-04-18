@@ -1,13 +1,9 @@
 # CLIP tags Around Junction Analysis (CAJA)
 ### Investigate patterns of target RNAs bound by RNA Binding Protein (RBP) around splicing junctions from HITS-CLIP data.
 
-Find the distance between the end/start of tags and splicing sites (SS) located on both positive and negative genomic DNA strand orientation between a given range (e.g. -50~+50, 0 representing splicing sites)
-
-
 #### CAJA consists of two programs: 
 - findJunctions.v1.7.py
 - plotFrequency.ipynb
-
 
 #### findJunctions.v1.7.py
 Compute the genomic distance between the end/start of HIST-CLIP tags and splicing sites (SS) which are located on both positive and negative genomic DNA strand orientation between a given range (e.g. -50~+50, 0 representing splicing sites).<br />
