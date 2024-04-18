@@ -57,4 +57,4 @@ For the plotting around 3'SS, outfile_name.pos.junc.2.summary.txt and outfile_na
 ( cat outfile_name.pos.junc.2.summary.txt ; echo ""; cat outfile_name.neg.junc.1.summary.txt; echo ) > outfile_name.junc.3SS.summary.txt
 ```
 
-The plotting is done using plotFrequency.ipynb in jupyter notebook. For example, plotyFrequency_ALKBH5_FL_C_5SS.ipynb is used for plotting RNA tags bound by ALKBH5 full-length and C-terminus proteins around 5SS; plotyFrequency_ALKBH5_FL_C_5SS.ipynb is used for plotting RNA tags bound by ALKBH5 full-length and C-terminus proteins around 3SS.
+The plotting is done using plotFrequency.ipynb in jupyter notebook. For example, plotFrequency_ALKBH5_FL_C_5SS.ipynb is used for plotting RNA tags bound by ALKBH5 full-length and C-terminus proteins around 5SS; plotFrequency_ALKBH5_FL_C_5SS.ipynb is used for plotting RNA tags bound by ALKBH5 full-length and C-terminus proteins around 3SS.
