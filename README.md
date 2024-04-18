@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # CLIP tags Around Junction Analysis (CAJA)
 ### Investigate patterns of target RNAs bound by RNA Binding Protein (RBP) around splicing junctions from HITS-CLIP data.
 =======
