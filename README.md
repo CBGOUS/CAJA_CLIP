@@ -2,20 +2,20 @@
 ### Investigate patterns of target RNAs bound by RNA Binding Protein (RBP) around splicing junctions from HITS-CLIP data.
 
 #### CAJA consists of two programs: 
-- findJunctions.v1.7.py
+- findJunctions.py
 - plotFrequency.ipynb
 
-#### findJunctions.v1.7.py
-Compute the genomic distance between the end/start of HIST-CLIP tags and splicing sites (SS) which are located on both positive and negative genomic DNA strand orientation between a given range (e.g. -50~+50, 0 representing splicing sites).<br />
+#### findJunctions.py
+Compute the genomic distance between the end/start of HITS-CLIP tags and splicing sites (SS) which are located on both positive and negative genomic DNA strand orientation between a given range (e.g. -50~+50, 0 representing splicing sites).<br />
 
 A parser for command-line options, arguments and sub-commands. Basic usage of findJunctions.v1.7.py:<br />
 
 ```console
-python3 findJunctions.v1.7.py splicesites_coordinates.txt file.bed -n 50 -o outfile_name
+python3 findJunctions.py splicesites_coordinates.txt HITS-CLIP_RNA_tags.bed -n 50 -o outfile_name
 ```
 
 - splicesites_coordinates.txt: tab-delimited text containing splicing sites coordinates which is generated from GTF file by using "hisat2_extract_splice_sites.py" in hisat2 package.
-- file.bed: the output bed file of the [CTK pipeline](https://github.com/chaolinzhanglab/ctk) for HITS-CLIP data analysis. It provides genomic coordinate information for unique tags bound by RNA-binding proteins.
+- HITS-CLIP_RNA_tags.bed: the output bed file of the [CTK pipeline](https://github.com/chaolinzhanglab/ctk) for HITS-CLIP data analysis. It provides genomic coordinate information for unique tags bound by RNA-binding proteins.
 - -n 50: the given range around splicing sites is -50nt~+50nt.
 - -o outfile_name: output files contain four bed-like format files and four summary txt files.
 
@@ -57,4 +57,6 @@ For the plotting around 3'SS, outfile_name.pos.junc.2.summary.txt and outfile_na
 ( cat outfile_name.pos.junc.2.summary.txt ; echo ""; cat outfile_name.neg.junc.1.summary.txt; echo ) > outfile_name.junc.3SS.summary.txt
 ```
 
-The plotting is done using plotFrequency.ipynb in jupyter notebook. For example, plotFrequency_ALKBH5_FL_C_5SS.ipynb is used for plotting RNA tags bound by ALKBH5 full-length and C-terminus proteins around 5SS; plotFrequency_ALKBH5_FL_C_5SS.ipynb is used for plotting RNA tags bound by ALKBH5 full-length and C-terminus proteins around 3SS.
+The plotting is done using plotFrequency.ipynb in jupyter notebook.<br/>
+ 
+ For example, plotFrequency_ALKBH5_FL_C_5SS.ipynb is used for plotting RNA tags bound by ALKBH5 full-length and C-terminus proteins around 5SS; plotFrequency_ALKBH5_FL_C_5SS.ipynb is used for plotting RNA tags bound by ALKBH5 full-length and C-terminus proteins around 3SS. plotFrequency_endo_ALKBH5_AGO2_5SS.ipynb is used for plotting RNA tags bound by endogenous ALKBH5 and AGO2 in A549 cells around 5SS; plotFrequency_endo_ALKBH5_AGO2_3SS.ipynb is used for plotting RNA tags bound by endogenous ALKBH5 and AGO2 in A549 cells around 3SS.
