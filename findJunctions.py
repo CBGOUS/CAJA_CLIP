@@ -1,5 +1,6 @@
 #find distance between the end of reads and either the start or the end of intron on both positive and negative strands between a given range (e.g. -100~~100)
 #Parser for command-line options, arguments and sub-commands
+#This is version 1.7
 
 import argparse
 parser = argparse.ArgumentParser()
