@@ -1,4 +1,4 @@
-#find distance between the end of reads and either the start or the end of intron on both positive and negative strands between a given range (e.g. -100~~100)
+#find the distance between the end/start of reads and either the start or the end of intron on both positive and negative orientation between a given range
 #Parser for command-line options, arguments and sub-commands
 #This is version 1.7
 
